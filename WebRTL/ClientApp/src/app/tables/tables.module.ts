@@ -18,7 +18,12 @@ import { RegularTableComponent5 } from "./regular5/regular-table5.component";
 import { RegularTableComponent5F } from "./regular5F/regular-table5F.component";
 import { RegularTableComponent6 } from "./regular6/regular-table6.component";
 import { RegularTableComponent6F } from "./regular6F/regular-table6F.component";
-
+import { RegularTableComponent7 } from "./regular7/regular-table7.component";
+import { RegularTableComponent7F } from "./regular7F/regular-table7F.component";
+import { RegularTableComponent8 } from "./regular8/regular-table8.component";
+import { RegularTableComponent8F } from "./regular8F/regular-table8F.component";
+import { RegularTableComponent9 } from "./regular9/regular-table9.component";
+import { RegularTableComponent9F } from "./regular9F/regular-table9F.component";
 
 import { SmartTableComponent } from "./smart-data-table/smart-data-table.component";
 
@@ -49,6 +54,13 @@ import { NgSelectModule } from '@ng-select/ng-select';
         RegularTableComponent5F,
         RegularTableComponent6,
         RegularTableComponent6F,
+        RegularTableComponent7,
+        RegularTableComponent7F,
+        RegularTableComponent8,
+        RegularTableComponent8F,
+        RegularTableComponent9,
+        RegularTableComponent9F,
+
 
         ExtendedTableComponent,
         SmartTableComponent

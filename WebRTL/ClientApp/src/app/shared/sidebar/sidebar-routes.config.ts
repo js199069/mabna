@@ -28,12 +28,12 @@ export const ROUTES: RouteInfo[] = [
         submenu: [
 
             { path: '/tables/regular6', title: 'رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/typography', title: 'وسیله نقلیه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/syntaxhighlighter', title: 'گیرنده/فرستنده', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/helperclasses', title: 'ضرائب مالی بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/textutilities', title: 'تعرفه ارزش محموله', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular7', title: 'وسیله نقلیه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'گیرنده/فرستنده', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular8', title: 'ضرائب مالی بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular9', title: 'تعرفه ارزش محموله', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/uikit/textutilities', title: 'نماینده و صاحب کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/textutilities', title: 'ثبت توضیحات ثابت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'ثبت توضیحات ثابت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/uikit/textutilities', title: 'ثبت تعرفه حمل/ارزش کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
         ]
@@ -42,8 +42,8 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'گزارشات', icon: 'ft-aperture', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
 
-            { path: '/uikit/grids', title: 'ساخت گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/typography', title: 'نمایش گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'ساخت گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'نمایش گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
         
         ]
     },
@@ -53,9 +53,9 @@ export const ROUTES: RouteInfo[] = [
 
             { path: '/uikit/grids', title: 'تعریف کاربران', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/uikit/typography', title: 'ثبت اطلاعات شرکت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/typography', title: 'تنظیمات برنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/typography', title: 'تهیه/بازیابی نسخه پشتیبان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/typography', title: 'نظرسنجی/پیشنهادات', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'تنظیمات برنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'تهیه/بازیابی نسخه پشتیبان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'نظرسنجی/پیشنهادات', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
         ]
     },

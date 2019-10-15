@@ -15,6 +15,12 @@ import { RegularTableComponent5 } from "./regular5/regular-table5.component";
 import { RegularTableComponent5F } from "./regular5F/regular-table5F.component";
 import { RegularTableComponent6 } from "./regular6/regular-table6.component";
 import { RegularTableComponent6F } from "./regular6F/regular-table6F.component";
+import { RegularTableComponent7 } from "./regular7/regular-table7.component";
+import { RegularTableComponent7F } from "./regular7F/regular-table7F.component";
+import { RegularTableComponent8 } from "./regular8/regular-table8.component";
+import { RegularTableComponent8F } from "./regular8F/regular-table8F.component";
+import { RegularTableComponent9 } from "./regular9/regular-table9.component";
+import { RegularTableComponent9F } from "./regular9F/regular-table9F.component";
 
 import { SmartTableComponent } from "./smart-data-table/smart-data-table.component";
 
@@ -126,6 +132,51 @@ const routes: Routes = [
             component: RegularTableComponent6F,
             data: {
                 title: 'Regular Table6F'
+            }
+        },  
+
+        {
+            path: 'regular7',
+            component: RegularTableComponent7,
+            data: {
+                title: 'Regular Table7'
+            }
+        },
+        {
+            path: 'regular7F',
+            component: RegularTableComponent7F,
+            data: {
+                title: 'Regular Table7F'
+            }
+        },  
+
+        {
+            path: 'regular8',
+            component: RegularTableComponent8,
+            data: {
+                title: 'Regular Table8'
+            }
+        },
+        {
+            path: 'regular8F',
+            component: RegularTableComponent8F,
+            data: {
+                title: 'Regular Table8F'
+            }
+        },  
+
+        {
+            path: 'regular9',
+            component: RegularTableComponent9,
+            data: {
+                title: 'Regular Table9'
+            }
+        },
+        {
+            path: 'regular9F',
+            component: RegularTableComponent9F,
+            data: {
+                title: 'Regular Table9F'
             }
         },  
     ]
