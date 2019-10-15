@@ -1,0 +1,148 @@
+<div class="row text-left">
+  
+</div>
+<!--Basic Table Starts-->
+<section id="simple-table">
+  <div class="row text-left">
+    <div class="col-sm-12">
+      <div class="card">
+          <div class="card-header">
+        
+
+              <button [routerLink]="['/tables/regularF']" class="btn btn-raised btn-primary">
+                  <i class="fa fa-plus"></i> ثبت جدید
+              </button>
+
+              <br />
+              <h4 class="card-title">
+                  بارنامه های تحویلی
+              </h4>
+
+              <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()" novalidate>
+                  <div class="row">
+
+                      <div class="col-md-4 col-12">
+                          <div class="form-group">
+                              <label for="inputEmail">از شماره</label>
+                              <input type="text" class="form-control" id="input1" formControlName="input1" required>
+                              <small class="form-text text-muted danger" *ngIf="!regularForm.get('input1').valid && (regularForm.get('input1').dirty || regularForm.get('input1').touched)">
+                                  مقداری عددی برای فیلد وارد نمایید
+                              </small>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-12">
+                          <div class="form-group">
+                              <label for="inputEmail">تا شماره</label>
+                              <input type="text" class="form-control" id="input2" formControlName="input2" required>
+                              <small class="form-text text-muted danger" *ngIf="!regularForm.get('input2').valid && (regularForm.get('input2').dirty || regularForm.get('input2').touched)">
+                                  مقداری عددی برای فیلد وارد نمایید
+                              </small>
+                          </div>
+                      </div>
+                      <div class="col-md-4 col-12">
+                          <div class="form-group">
+                              <label for="inputEmail">سری</label>
+                              <input type="text" class="form-control" id="input3" formControlName="input3" required>
+                              <small class="form-text text-muted danger" *ngIf="!regularForm.get('input3').valid && (regularForm.get('input3').dirty || regularForm.get('input3').touched)">
+                                  مقداری  برای فیلد وارد نمایید
+                              </small>
+                          </div>
+                      </div>
+                      <div class="col-md-12 col-12">
+                          <div class="form-group">
+                              <label for="inputEmail">توضیحات</label>
+                              <textarea class="form-control" rows="3" id="input4" formControlName="input4" required></textarea>
+                              <small class="form-text text-muted danger" *ngIf="!regularForm.get('input4').valid && (regularForm.get('input4').dirty || regularForm.get('input4').touched)">
+                                  مقداری  برای فیلد وارد نمایید
+                              </small>
+                          </div>
+                      </div>
+
+
+
+                  </div>
+                  <br />
+                  <div class="row">
+                      <div class="col-md-2">
+                          <button type="button" class="btn btn-raised btn-primary">
+                              <i class="fa fa-check-square-o"></i> جستجو
+                          </button>
+                      </div>
+                    
+
+                  </div>
+              </form>
+              <br />
+          </div>
+        <div class="card-content">
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>از شماره</th>
+                      <th>تا شماره</th>
+                      <th>سری بارنامه</th>
+                      <td>	تعداد بارنامه</td>
+                      <td>	مصرف شده</td>
+                      <td>	باطل شده</td>
+                      <td>	باقی مانده</td>
+                      <td>تاریخ ثبت	</td>
+                      <td>کاربر</td>
+                      <td>توضیحات</td>
+                      <td>فعال</td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="row">1</th>
+
+                      <td>784001</td>
+                      <td>784100</td>
+                      <td>94/21</td>
+                      <td>100</td>
+                      <td>100</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>1394/11/07	</td>
+                      <td>کاربر</td>
+                      <td></td>
+                      <td>خیر</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">2</th>
+                      <td>784001</td>
+                      <td>784100</td>
+                      <td>94/21</td>
+                      <td>100</td>
+                      <td>100</td>
+                      <td>03</td>
+                      <td>0</td>
+                      <td>1394/11/07	</td>
+                      <td>کاربر</td>
+                      <td></td>
+                      <td>خیر</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">3</th>
+                      <td>7840301</td>
+                      <td>784100</td>
+                      <td>94/21</td>
+                      <td>100</td>
+                      <td>100</td>
+                      <td>03</td>
+                      <td>0</td>
+                      <td>1394/11/07	</td>
+                      <td>کاربر</td>
+                      <td></td>
+                      <td>خیر</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Basic Table Ends-->
