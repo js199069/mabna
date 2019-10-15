@@ -17,141 +17,62 @@
                         جستجوی حواله
 
                     </h4>
-                    <dp-date-picker dir="rtl"
-                                    mode="day"
-                                    placeholder="تاریخ"
-                                    theme="dp-material">
-                    </dp-date-picker>
-                    <div class="row">
 
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
+                    <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()" novalidate>
+                        <div class="row">
 
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="شماره">
-                                    <div class="form-control-position">
-
-                                    </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">از شماره</label>
+                                    <input type="text" class="form-control" id="input1" formControlName="input1" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input1').valid && (regularForm.get('input1').dirty || regularForm.get('input1').touched)">
+                                        مقداری عددی برای فیلد وارد نمایید
+                                    </small>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="تاریخ">
-                                    <div class="form-control-position">
-
-                                    </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">تا شماره</label>
+                                    <input type="text" class="form-control" id="input2" formControlName="input2" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input2').valid && (regularForm.get('input2').dirty || regularForm.get('input2').touched)">
+                                        مقداری عددی برای فیلد وارد نمایید
+                                    </small>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="تا">
-                                    <div class="form-control-position">
-
-                                    </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">سری</label>
+                                    <input type="text" class="form-control" id="input3" formControlName="input3" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input3').valid && (regularForm.get('input3').dirty || regularForm.get('input3').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="کارت ناوگان">
-                                    <div class="form-control-position">
-
-                                    </div>
+                            <div class="col-md-12 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">توضیحات</label>
+                                    <textarea class="form-control" rows="3" id="input4" formControlName="input4" required></textarea>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input4').valid && (regularForm.get('input4').dirty || regularForm.get('input4').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
                                 </div>
                             </div>
+
+
+
                         </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="کارت راننده">
-                                    <div class="form-control-position">
-
-                                    </div>
-                                </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-check-square-o"></i> جستجو
+                                </button>
                             </div>
+
+
                         </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="شماره قرارداد">
-                                    <div class="form-control-position">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="فرستنده">
-                                    <div class="form-control-position">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="صاحب کالا">
-                                    <div class="form-control-position">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="گیرنده">
-                                    <div class="form-control-position">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="نوع بار">
-                                    <div class="form-control-position">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-12">
-                            <div class="form-group">
-
-                                <div class="position-relative has-icon-left">
-                                    <input type="text" class="form-control round" name="form-control-with-icon" placeholder="کالا">
-                                    <div class="form-control-position">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-raised btn-primary">
-                            <i class="fa fa-check-square-o"></i> جستجو
-                        </button>
-                    </div>
+                    </form>
+                    <br />
                     <br />
                 </div>
                 <div class="card-content">
@@ -160,56 +81,21 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>از شماره</th>
-                                    <th>تا شماره</th>
-                                    <th>سری بارنامه</th>
-                                    <td>	تعداد بارنامه</td>
-                                    <td>	مصرف شده</td>
-                                    <td>	باطل شده</td>
-                                    <td>	باقی مانده</td>
-                                    <td>تاریخ ثبت	</td>
-                                    <td>کاربر</td>
+                                    <th>شماره بارنامه</th>
+                                    <th>تاریخ</th>
+                                    <th>فرستنده</th>
+                                    <td>گیرنده</td>
+                                    <td>راننده</td>
+                                    <td>ناوگان</td>
+                                    <td>کالا</td>
+                                    <td>وزن</td>
+                                    <td>باطل</td>
+                                    <td>کد رهگیری</td>
+                                    <td>وضعیت ناوگان</td>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-
-                                    <td>784001</td>
-                                    <td>784100</td>
-                                    <td>94/21</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>1394/11/07	</td>
-                                    <td>کاربر</td>
-
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>784001</td>
-                                    <td>784100</td>
-                                    <td>94/21</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>03</td>
-                                    <td>0</td>
-                                    <td>1394/11/07	</td>
-                                    <td>کاربر</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>7840301</td>
-                                    <td>784100</td>
-                                    <td>94/21</td>
-                                    <td>100</td>
-                                    <td>100</td>
-                                    <td>03</td>
-                                    <td>0</td>
-                                    <td>1394/11/07	</td>
-                                    <td>کاربر</td>
-                                </tr>
+                              
                             </tbody>
                         </table>
                     </div>

@@ -2,9 +2,9 @@ import { NgModule,Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
 
 @Component({
-    selector: 'app-regular-table',
-    templateUrl: './regular-table2.component.html',
-    styleUrls: ['./regular-table2.component.scss']
+    selector: 'app-regular-table4',
+    templateUrl: './regular-table4.component.html',
+    styleUrls: ['./regular-table4.component.scss']
 })
 @NgModule({
     imports: [
@@ -13,7 +13,7 @@ import { FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
     declarations: [
     ]
 })
-export class RegularTableComponent2 implements OnInit{
+export class RegularTableComponent4 implements OnInit{
     @ViewChild('f') floatingLabelForm: NgForm;
     @ViewChild('vform') validationForm: FormGroup;
     regularForm: FormGroup;
@@ -23,7 +23,12 @@ export class RegularTableComponent2 implements OnInit{
             'input1': new FormControl(null, [Validators.required, Validators.pattern(/^[.\d]+$/)]),
             'input2': new FormControl(null, [Validators.required, Validators.pattern(/^[.\d]+$/)]),
             'input3': new FormControl(null, [Validators.required]),
-            'input4': new FormControl(null, [Validators.required]),
+            'input4': new FormControl(null, [Validators.required, Validators.pattern(/^[.\d]+$/)]),
+            'input5': new FormControl(null, [Validators.required]),
+            'input6': new FormControl(null, [Validators.required]),
+            'input7': new FormControl(null, [Validators.required]),
+            'input8': new FormControl(null, [Validators.required, Validators.pattern(/^[.\d]+$/)]),
+            'input9': new FormControl(null, [Validators.required]),
 
             'password': new FormControl(null, [Validators.required, Validators.minLength(4), Validators.maxLength(24)]),
             'textArea': new FormControl(null, [Validators.required]),

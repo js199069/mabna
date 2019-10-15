@@ -1,0 +1,116 @@
+<div class="row text-left">
+
+</div>
+<!--Basic Table Starts-->
+<section id="simple-table">
+    <div class="row text-left">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <button [routerLink]="['/tables/regular5']" class="btn btn-raised btn-primary">
+                        <i class="fa fa-arrow-right"></i> بازگشت
+                    </button>
+                    <br />
+                    <h4 class="card-title">
+                        ثبت حساب رانندگان
+                    </h4>
+                    <br />
+
+
+                    <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()" novalidate>
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">کارت راننده</label>
+                                    <input type="text" class="form-control" id="input3" formControlName="input3" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input3').valid && (regularForm.get('input3').dirty || regularForm.get('input3').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">نام </label>
+                                    <input type="text" class="form-control" id="input5" formControlName="input5" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input5').valid && (regularForm.get('input5').dirty || regularForm.get('input5').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">شماره کارت</label>
+                                    <input type="text" class="form-control" id="input1" formControlName="input1" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input1').valid && (regularForm.get('input1').dirty || regularForm.get('input1').touched)">
+                                        مقداری عددی برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">نام صاحب حساب</label>
+                                    <input type="text" class="form-control" id="input9" formControlName="input9" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input9').valid && (regularForm.get('input9').dirty || regularForm.get('input9').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">شماره حساب</label>
+                                    <input type="text" class="form-control" id="input2" formControlName="input2" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input2').valid && (regularForm.get('input2').dirty || regularForm.get('input2').touched)">
+                                        مقداری عددی برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">نام بانک</label>
+                                    <input type="text" class="form-control" id="input7" formControlName="input7" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input7').valid && (regularForm.get('input7').dirty || regularForm.get('input7').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                        </div>
+                      
+                        <br />
+                        <div class="row">
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-check-square-o"></i> ذخیره
+                                </button>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-edit"></i> ویرایش
+                                </button>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-remove"></i> حذف
+                                </button>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-window-close"></i> انصراف
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--Basic Table Ends-->

@@ -14,20 +14,20 @@ export const ROUTES: RouteInfo[] = [
         submenu: [
             { path: '/tables/regular', title: 'بارنامه های  تحویلی', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular2', title: 'صدور حواله', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/textutilities', title: 'صدور بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regularF', title: 'صدور بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
-            { path: '/uikit/textutilities', title: 'ثبت فیش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/textutilities', title: 'ثبت اصلاعات بیمه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/tables/regular2', title: 'ثبت واریزی رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/syntaxhighlighter', title: 'نمایش سفارشات آنلاین', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/syntaxhighlighter', title: 'حساب رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular3', title: 'ثبت فیش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'ثبت اصلاعات بیمه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular4', title: 'ثبت واریزی رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'نمایش سفارشات آنلاین', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular5', title: 'حساب رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
         ]
     },
     {
         path: '', title: 'جداول سیستم', icon: 'ft-aperture', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
 
-            { path: '/uikit/grids', title: 'رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular6', title: 'رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/uikit/typography', title: 'وسیله نقلیه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/uikit/syntaxhighlighter', title: 'گیرنده/فرستنده', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/uikit/helperclasses', title: 'ضرائب مالی بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
