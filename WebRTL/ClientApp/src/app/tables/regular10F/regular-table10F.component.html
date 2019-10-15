@@ -1,0 +1,177 @@
+<div class="row text-left">
+
+</div>
+<!--Basic Table Starts-->
+<section id="simple-table">
+    <div class="row text-left">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <button [routerLink]="['/tables/regular10']" class="btn btn-raised btn-primary">
+                        <i class="fa fa-arrow-right"></i> بازگشت
+                    </button>
+                    <br />
+                    <h4 class="card-title">
+                        ثبت صاحب کالا /نماینده صاحب کالا
+                    </h4>
+                    <br />
+
+
+                    <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()" novalidate>
+                        <div class="row">
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> پیشوند</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>آقای</option>
+                                        <option>شرکت</option>
+                                        <option>موسسه</option>
+                                        <option>کارخانه</option>
+                                        <option>نمایندگی</option>
+                                        <option>بنگاه</option>
+                                        <option>انبار</option>
+                                        <option>مجتمع</option>
+                                        <option>کارگاه</option>
+                                        <option>خانم</option>
+                                        <option>سازمان</option>
+                                        <option>تعاونی</option>
+                                        <option>سندیکا</option>
+                                        <option>وزارت خانه</option>
+                                        <option>مرغداری</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">نام</label>
+                                    <input type="text" class="form-control" id="input3" formControlName="input3" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input3').valid && (regularForm.get('input3').dirty || regularForm.get('input3').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">نام خانوادگی </label>
+                                    <input type="text" class="form-control" id="input6" formControlName="input6" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input6').valid && (regularForm.get('input6').dirty || regularForm.get('input6').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">کد/شناسه ملی</label>
+                                    <input type="text" class="form-control" id="input7" formControlName="input7" required maxlength="10">
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input7').valid && (regularForm.get('input7').dirty || regularForm.get('input7').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> وضعیت</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>فعال</option>
+                                        <option>غیر فعال</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">تلفن</label>
+                                    <input type="text" class="form-control" id="input1" formControlName="input1" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input1').valid && (regularForm.get('input1').dirty || regularForm.get('input1').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">دورنگار</label>
+                                    <input type="text" class="form-control" id="input2" formControlName="input2" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input2').valid && (regularForm.get('input2').dirty || regularForm.get('input2').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">همراه</label>
+                                    <input type="text" class="form-control" id="input8" formControlName="input8" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input8').valid && (regularForm.get('input8').dirty || regularForm.get('input8').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">آدرس</label>
+                                    <input type="text" class="form-control" id="input10" formControlName="input10" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input10').valid && (regularForm.get('input10').dirty || regularForm.get('input10').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">کد پستی</label>
+                                    <input type="text" class="form-control" id="input11" formControlName="input11" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input11').valid && (regularForm.get('input11').dirty || regularForm.get('input11').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+
+                        </div>
+                      
+                        <br />
+                        <div class="row">
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-check-square-o"></i> ذخیره
+                                </button>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-edit"></i> ویرایش
+                                </button>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-remove"></i> حذف
+                                </button>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-window-close"></i> انصراف
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--Basic Table Ends-->

@@ -1,0 +1,185 @@
+<div class="row text-left">
+
+</div>
+<!--Basic Table Starts-->
+<section id="simple-table">
+    <div class="row text-left">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <button [routerLink]="['/tables/regular11F']" class="btn btn-raised btn-primary">
+                        <i class="fa fa-plus"></i> ثبت جدید
+                    </button>
+
+                    <br />
+
+                    <h4 class="card-title">
+                        جستجوی  تعرفه حمل/ارزش کالا
+
+                    </h4>
+
+                    <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()" novalidate>
+                        <div class="row">
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> مبدا</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>تهران</option>
+                                        <option>اردبیل</option>
+                                        <option>تبریز</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> مقصد</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>تهران</option>
+                                        <option>اردبیل</option>
+                                        <option>تبریز</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> کالا</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>مرغ</option>
+                                        <option>گوشت</option>
+                                        <option>ماهی</option>
+                                        <option>گوشی همراه</option>
+                                        <option>لپ تاپ</option>
+                                        <option>گچ</option>
+                                        <option>سیمان</option>
+                                        <option>آجر</option>
+                                        <option>خشکبار</option>
+                                        <option>میوه</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> نوع بارگیر</label>
+                                    <ng-select [items]="loaderType" bindLabel="name" placeholder="انتخاب کنید">
+                                    </ng-select>
+
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">از وزن</label>
+                                    <input type="text" class="form-control" id="input3" formControlName="input3" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input3').valid && (regularForm.get('input3').dirty || regularForm.get('input3').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">تا وزن </label>
+                                    <input type="text" class="form-control" id="input6" formControlName="input6" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input6').valid && (regularForm.get('input6').dirty || regularForm.get('input6').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">نرخ/کرایه/ارزش</label>
+                                    <input type="text" class="form-control" id="input7" formControlName="input7" required maxlength="10">
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input7').valid && (regularForm.get('input7').dirty || regularForm.get('input7').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <br />
+                                    <label> موارد:</label>
+                                    <label> محاسبه نرخ(نرخ*تناژ)</label>
+                                    <input type="checkbox" aria-label="محاسبه نرخ(نرخ*تناژ)">
+                                    <label> محاسبه ارزش محموله</label>
+                                    <input type="checkbox" aria-label="محاسبه ارزش محموله">
+                              
+                                </div>
+                            </div>
+
+
+                          
+
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-raised btn-primary">
+                                    <i class="fa fa-check-square-o"></i> جستجو
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </form>
+                    <br />
+                    <br />
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+
+                                    <th> مبدا</th>
+                                    <th>مقصد</th>
+                                    <th>کالا </th>
+                                    <td>نوع بارگیر</td>
+                                    <td>از وزن </td>
+                                    <td>تا وزن</td>
+                                    <td>کرایه </td>
+                                    <td>محاسبه نرخ </td>
+                                    <td>محاسبه ارزش محموله</td>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+
+                                    <th> درود</th>
+                                    <th>آبیگلو</th>
+                                    <th>آبسردکن انواع </th>
+                                    <td>باری چوبی</td>
+                                    <td>10000 </td>
+                                    <td>100000</td>
+                                    <td>20000 </td>
+                                    <td>بلی</td>
+                                    <td>خیر</td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Basic Table Ends-->

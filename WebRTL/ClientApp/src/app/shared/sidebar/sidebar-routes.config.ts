@@ -32,9 +32,9 @@ export const ROUTES: RouteInfo[] = [
             { path: '/dashboard/dashboard1', title: 'گیرنده/فرستنده', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular8', title: 'ضرائب مالی بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular9', title: 'تعرفه ارزش محموله', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/textutilities', title: 'نماینده و صاحب کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular10', title: 'نماینده و صاحب کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/dashboard/dashboard1', title: 'ثبت توضیحات ثابت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/textutilities', title: 'ثبت تعرفه حمل/ارزش کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular11', title: 'ثبت تعرفه حمل/ارزش کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
         ]
     },
@@ -51,8 +51,8 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'سیستم', icon: 'ft-aperture', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
 
-            { path: '/uikit/grids', title: 'تعریف کاربران', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/uikit/typography', title: 'ثبت اطلاعات شرکت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'تعریف کاربران', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/dashboard/dashboard1', title: 'ثبت اطلاعات شرکت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/dashboard/dashboard1', title: 'تنظیمات برنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/dashboard/dashboard1', title: 'تهیه/بازیابی نسخه پشتیبان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/dashboard/dashboard1', title: 'نظرسنجی/پیشنهادات', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
