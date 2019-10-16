@@ -28,7 +28,8 @@ import { RegularTableComponent10 } from "./regular10/regular-table10.component";
 import { RegularTableComponent10F } from "./regular10F/regular-table10F.component";
 import { RegularTableComponent11 } from "./regular11/regular-table11.component";
 import { RegularTableComponent11F } from "./regular11F/regular-table11F.component";
-
+import { RegularTableComponent12 } from "./regular12/regular-table12.component";
+import { RegularTableComponent13 } from "./regular13/regular-table13.component";
 
 import { SmartTableComponent } from "./smart-data-table/smart-data-table.component";
 
@@ -69,6 +70,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
         RegularTableComponent10F,
         RegularTableComponent11,
         RegularTableComponent11F,
+        RegularTableComponent12,
+        RegularTableComponent13,
 
 
         ExtendedTableComponent,

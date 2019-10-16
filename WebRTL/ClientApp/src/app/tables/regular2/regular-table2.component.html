@@ -39,26 +39,162 @@
                                     </small>
                                 </div>
                             </div>
+
                             <div class="col-md-4 col-12">
                                 <div class="form-group">
-                                    <label for="inputEmail">سری</label>
+                                    <label>تاریخ </label>
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <dp-date-picker class="form-control" dir="rtl"
+                                                            mode="daytime"
+                                                            placeholder="تاریخ"
+                                                            theme="dp-material"
+                                                            id="input6" formControlName="input6" required>
+                                            </dp-date-picker>
+
+                                            <small class="form-text text-muted danger" *ngIf="!regularForm.get('input6').valid && (regularForm.get('input6').dirty || regularForm.get('input6').touched)">
+                                                مقداری برای فیلد وارد نمایید
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label>تا </label>
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <dp-date-picker class="form-control" dir="rtl"
+                                                            mode="daytime"
+                                                            placeholder="تاریخ"
+                                                            theme="dp-material"
+                                                            id="input7" formControlName="input7" required>
+                                            </dp-date-picker>
+
+                                            <small class="form-text text-muted danger" *ngIf="!regularForm.get('input7').valid && (regularForm.get('input7').dirty || regularForm.get('input7').touched)">
+                                                مقداری برای فیلد وارد نمایید
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> شماره قرارداد</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>10.50</option>
+                                        <option>10/25558</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">فرستنده</label>
                                     <input type="text" class="form-control" id="input3" formControlName="input3" required>
                                     <small class="form-text text-muted danger" *ngIf="!regularForm.get('input3').valid && (regularForm.get('input3').dirty || regularForm.get('input3').touched)">
                                         مقداری  برای فیلد وارد نمایید
                                     </small>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-12">
+                            <div class="col-md-4 col-12">
                                 <div class="form-group">
-                                    <label for="inputEmail">توضیحات</label>
-                                    <textarea class="form-control" rows="3" id="input4" formControlName="input4" required></textarea>
+                                    <label for="inputEmail">صاحب کالا</label>
+                                    <input type="text" class="form-control" id="input4" formControlName="input4" required>
+                                   
                                     <small class="form-text text-muted danger" *ngIf="!regularForm.get('input4').valid && (regularForm.get('input4').dirty || regularForm.get('input4').touched)">
                                         مقداری  برای فیلد وارد نمایید
                                     </small>
                                 </div>
                             </div>
 
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> شماره کوتاژ</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>13/450</option>
+                                        <option>10/25558</option>
 
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">گیرنده</label>
+                                    <input type="text" class="form-control" id="input5" formControlName="input5" required>
+                              
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input5').valid && (regularForm.get('input5').dirty || regularForm.get('input5').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label> کالا</label>
+                                    <select class="form-control" id="basicSelect">
+                                        <option>مرغ</option>
+                                        <option>گوشت</option>
+                                        <option>ماهی</option>
+                                        <option>گوشی همراه</option>
+                                        <option>لپ تاپ</option>
+                                        <option>گچ</option>
+                                        <option>سیمان</option>
+                                        <option>آجر</option>
+                                        <option>خشکبار</option>
+                                        <option>میوه</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">کارت ناوگان</label>
+                                    <input type="text" class="form-control" id="input6" formControlName="input6" required>
+                                  
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input6').valid && (regularForm.get('input6').dirty || regularForm.get('input6').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">کارت راننده</label>
+                                    <input type="text" class="form-control" id="input7" formControlName="input7" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input7').valid && (regularForm.get('input7').dirty || regularForm.get('input7').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">پلاک ناوگان</label>
+                                    <input type="text" class="form-control" id="input8" formControlName="input8" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input8').valid && (regularForm.get('input8').dirty || regularForm.get('input8').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">سری</label>
+                                    <input type="text" class="form-control" id="input9" formControlName="input9" required>
+                                    <small class="form-text text-muted danger" *ngIf="!regularForm.get('input9').valid && (regularForm.get('input9').dirty || regularForm.get('input9').touched)">
+                                        مقداری  برای فیلد وارد نمایید
+                                    </small>
+                                </div>
+                            </div>
 
                         </div>
                         <br />

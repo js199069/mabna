@@ -17,9 +17,9 @@ export const ROUTES: RouteInfo[] = [
             { path: '/tables/regularF', title: 'صدور بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
             { path: '/tables/regular3', title: 'ثبت فیش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'ثبت اصلاعات بیمه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'ثبت اصلاعات بیمه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular4', title: 'ثبت واریزی رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'نمایش سفارشات آنلاین', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'نمایش سفارشات آنلاین', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular5', title: 'حساب رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
         ]
     },
@@ -29,11 +29,11 @@ export const ROUTES: RouteInfo[] = [
 
             { path: '/tables/regular6', title: 'رانندگان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular7', title: 'وسیله نقلیه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'گیرنده/فرستنده', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'گیرنده/فرستنده', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular8', title: 'ضرائب مالی بارنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular9', title: 'تعرفه ارزش محموله', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular10', title: 'نماینده و صاحب کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'ثبت توضیحات ثابت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'ثبت توضیحات ثابت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
             { path: '/tables/regular11', title: 'ثبت تعرفه حمل/ارزش کالا', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
         ]
@@ -42,8 +42,8 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'گزارشات', icon: 'ft-aperture', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
 
-            { path: '/dashboard/dashboard1', title: 'ساخت گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'نمایش گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'ساخت گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'نمایش گزارش', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
         
         ]
     },
@@ -51,11 +51,11 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'سیستم', icon: 'ft-aperture', class: 'has-sub', badge: '', badgeClass: '', isExternalLink: false,
         submenu: [
 
-            { path: '/dashboard/dashboard1', title: 'تعریف کاربران', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'ثبت اطلاعات شرکت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'تنظیمات برنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'تهیه/بازیابی نسخه پشتیبان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
-            { path: '/dashboard/dashboard1', title: 'نظرسنجی/پیشنهادات', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular12', title: 'تعریف کاربران', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '/tables/regular13', title: 'ثبت اطلاعات شرکت', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'تنظیمات برنامه', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'تهیه/بازیابی نسخه پشتیبان', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
+            { path: '', title: 'نظرسنجی/پیشنهادات', icon: '', class: '', badge: '', badgeClass: '', isExternalLink: false, submenu: [] },
 
         ]
     },

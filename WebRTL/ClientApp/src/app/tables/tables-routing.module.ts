@@ -25,6 +25,8 @@ import { RegularTableComponent10 } from "./regular10/regular-table10.component";
 import { RegularTableComponent10F } from "./regular10F/regular-table10F.component";
 import { RegularTableComponent11 } from "./regular11/regular-table11.component";
 import { RegularTableComponent11F } from "./regular11F/regular-table11F.component";
+import { RegularTableComponent12 } from "./regular12/regular-table12.component";
+import { RegularTableComponent13 } from "./regular13/regular-table13.component";
 
 import { SmartTableComponent } from "./smart-data-table/smart-data-table.component";
 
@@ -213,6 +215,20 @@ const routes: Routes = [
                 title: 'Regular Table11F'
             }
         },  
+        {
+            path: 'regular13',
+            component: RegularTableComponent13,
+            data: {
+                title: 'Regular Table13'
+            }
+        },
+        {
+            path: 'regular12',
+            component: RegularTableComponent12,
+            data: {
+                title: 'Regular Table12'
+            }
+        },
     ]
   }
 ];
